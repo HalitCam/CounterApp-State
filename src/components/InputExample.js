@@ -13,7 +13,7 @@ const InputExample = () => {
             Please enter a surname <br/>
           <input value={surname} onChange={(event)=>setSurname(event.target.value)}/>
           <br/>
-
+        <br/>
         {name} {surname}
         </div>
     );
