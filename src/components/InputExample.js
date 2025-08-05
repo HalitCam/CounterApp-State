@@ -6,12 +6,13 @@ const InputExample = () => {
     return (
         
         <div>
+          
             Please enter a name <br/>
           <input value={name} onChange={(event)=>setName(event.target.value)}/>
           <br/>
           <br/>
             Please enter a surname <br/>
-          <input value={surname} onChange={(event)=>setSurname(event.target.value)}/>
+          <input value={surname} onChange={(event2)=>setSurname(event2.target.value)}/>
           <br/>
         <br/>
         {name} {surname}

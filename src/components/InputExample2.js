@@ -2,27 +2,28 @@
 
 import React, {useState} from 'react';
 
-const InputExample2 = () => {
-    const [dataPerson,setData] = useState({name:"Halit", surName:"Cam"})
-    // const onChangeName = (event)=>setData(event.target.dataPerson.name.value)
-    // const onChangeSurname = (event)=>setData(event.target.dataPerson.surName.value)
-    const handleChange = (event)=>{
-        const{name,value}=event.target;
-        setData(prevData => ({
-            ...prevData,[name]:value
-        }))
+const InputExample2=()=>{
+        const [form,setForm] = useState({name:"Halit", surName:"Cam"});
+    
+    const onChangeForm=(e)=>{
+        setForm({...form, [e.target.name]: e.target.value});
     }
+  
+
 
     return (
         <div>
+
+
             Name : <br/>
-            <input name='name' value={dataPerson.name} onChange={onChangeName}/>
+            <input name='name' value={form.name} onChange={onChangeForm}/>
             
             <br/>
 
             Surname : <br/>
-            <input name='surName' value={dataPerson.surName} onChange={onChangeSurname}/>
-            
+            <input name='surName' value={form.surName} onChange={onChangeForm}/>
+             <br/> <br/>    
+             {form.name} {form.surName}
         </div>
     );
 }
