@@ -4,12 +4,13 @@ import './index.css';
 // import App from './App';
 import reportWebVitals from './reportWebVitals';
 // import Counter from './components/counter';
-import InputExample from './components/InputExample';
+// import InputExample from './components/InputExample';
+import InputExample2 from './components/InputExample2';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    <InputExample/>
+    <InputExample2/>
   </React.StrictMode>
 );
 
